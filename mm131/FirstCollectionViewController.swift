@@ -262,7 +262,7 @@ class FirstCollectionViewController: UICollectionViewController, UICollectionVie
                         //解析imageurl
                         for node in doc.css("img"){
                             if self.checkImageUrl(node["src"]){
-                                var temp = PhotoInfo()
+                                let temp = PhotoInfo()
                                 temp.imageUrl = node["src"]!
                                 photos.append(temp)
                                 self.isGot = true

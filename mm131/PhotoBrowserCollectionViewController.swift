@@ -68,10 +68,6 @@ class CustomPhotoAlbum {
 }
 
 class PhotoBrowserCollectionViewCell: UICollectionViewCell {
-    // request stored for cancellation and checking the original URLString
-    var request: Alamofire.Request?
-    
-    //image是直接连接到storyboard上的
     var imageView :UIImageView = UIImageView()
     
     required init?(coder aDecoder: NSCoder) {
@@ -97,7 +93,6 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
     var currentPage = 1 //当前页数
     var currentType: PageType = .qingchun //默认的type为qingchun
     var forumId: Int = 0 //forum id
-    var currentImage = UIImage() //保存当前的图片，方便保存到相册中
     var photoInfo: PhotoInfo = PhotoInfo() //保存图片信息
     
     override func viewDidLoad() {
@@ -150,7 +145,7 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
         //只有这样图片才不会显示为纯蓝色
         var image = UIImage(named: "Download")
         image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        let downloadItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self, action: "saveToCustomAlbum")
+        let downloadItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self, action: "saveImage:")
         downloadItem.tintColor = UIColor.whiteColor()
         items.append(downloadItem)
         items.append(flexibleSpace)
@@ -167,36 +162,43 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
         loadingNotification.labelText = text
     }
     
-    //
-    func saveToCustomAlbum(){
-
-        saveToAlbum()
-//        loadTextHUD("保存成功", time: 0.3)
-//        MBProgressHUD.hideHUDForView(self.view, animated: true)
+    //保存图片
+    func saveImage(sender: AnyObject){
+        let indexPath = collectionView!.indexPathsForVisibleItems().last!
+        let cell = collectionView?.cellForItemAtIndexPath(indexPath) as! PhotoBrowserCollectionViewCell
+        if cell.imageView.image == nil{
+            print("image nil")
+        }else{
+            UIImageWriteToSavedPhotosAlbum(cell.imageView.image!, self, "image:didFinishSavingWithError:contextInfo:", nil)
+        }
     }
     
-    //保存图片到相册
-    func saveToAlbum(){
-        UIImageWriteToSavedPhotosAlbum(self.currentImage, nil, "image:didFinishSavingWithError:contextInfo", nil)
+    func image(image:UIImage,didFinishSavingWithError error:NSError?,contextInfo:AnyObject?) {
+        if error == nil{
+            print("保存成功")
+            showSuccessMsg("保存成功", interval: 0.5)
+        }else{
+            print("保存失败")
+            showErrorMsg("保存失败", interval: 0.5)
+        }
+    }
+    
+    //展示消息
+    func showSuccessMsg(text: String, interval: Double){
         let hud = JGProgressHUD(style: JGProgressHUDStyle.Light)
-        hud.textLabel.text = "保存成功"
+        hud.textLabel.text = text
         hud.indicatorView = JGProgressHUDSuccessIndicatorView()
         hud.showInView(self.view, animated: true)
-        hud.dismissAfterDelay(1.0, animated: true)
-//        loadTextHUD("保存成功", time: 1)
-//        MBProgressHUD.hideHUDForView(self.view, animated: true)
+        hud.dismissAfterDelay(interval, animated: true)
     }
-    func image(image: UIImage, didFinishSavingWithError error: NSError, contextInfo:UnsafePointer<Void>)       {
-        print("in")
+    
+    func showErrorMsg(text: String, interval: Double){
+        let hud = JGProgressHUD(style: JGProgressHUDStyle.Light)
+        hud.textLabel.text = text
+        hud.indicatorView = JGProgressHUDErrorIndicatorView()
+        hud.showInView(self.view, animated: true)
+        hud.dismissAfterDelay(interval, animated: true)
     }
-//    func image(image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: AnyObject) {
-//        print("in")
-//        if error != nil {
-//            print("保存失败")
-//            return
-//        }
-//        print("保存成功")
-//    }
 
     //获取forumid
     func getForumId()->Int{
@@ -207,14 +209,6 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
         }
         
         return 0 //invalid
-    }
-    
-    //滑动页面出发的操作，collectionview实现UIScrollViewDelegate
-    override func scrollViewDidScroll(scrollView: UIScrollView) {
-        //当页面向右滑动时获取下一张图片
-        if scrollView.contentSize.width - scrollView.contentOffset.x < view.frame.width * 0.95{
-            populatePhotos()
-        }
     }
     
     //组装页面的url
@@ -310,17 +304,19 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
         
         //复用时先置为nil，使其不显示原有图片
         cell.imageView.image = nil
-        //
-        cell.request?.cancel()
-        let HUD = JGProgressHUD(style: JGProgressHUDStyle.Light)
-        HUD.textLabel.text = "加载中"
-        HUD.showInView(self.view, animated: true)
+
+        let loadingNotification = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        loadingNotification.mode = MBProgressHUDMode.Indeterminate
+        loadingNotification.labelText = "加载中..."
         cell.imageView.sd_setImageWithURL(imageURL, completed: { (image, error, cacheType, url) -> Void in
-            self.currentImage = image
+            MBProgressHUD.hideHUDForView(self.view, animated: false)
+            if image == nil{
+                return
+            }
+
             if indexPath.row + 2 >= self.currentPage{
                 self.populatePhotos()
             }
-            HUD.dismiss()
         })
         
         return cell

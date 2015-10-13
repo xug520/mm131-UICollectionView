@@ -11,11 +11,11 @@
             condition = "indexPath.row == 13"
             continueAfterRunningActions = "No"
             filePath = "mm131/PhotoBrowserCollectionViewController.swift"
-            timestampString = "466006795.660128"
+            timestampString = "466430462.286685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "308"
-            endingLineNumber = "308"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
             landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -27,11 +27,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mm131/PhotoBrowserCollectionViewController.swift"
-            timestampString = "466006795.660128"
+            timestampString = "466430462.286685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
             landmarkName = "getForumId()"
             landmarkType = "5">
          </BreakpointContent>
@@ -43,11 +43,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mm131/PhotoBrowserCollectionViewController.swift"
-            timestampString = "466006795.660128"
+            timestampString = "466430462.286685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "237"
-            endingLineNumber = "237"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "checkImageUrl(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -59,28 +59,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mm131/PhotoBrowserCollectionViewController.swift"
-            timestampString = "466006795.660128"
+            timestampString = "466430462.286685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "getForumId()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mm131/PhotoBrowserCollectionViewController.swift"
-            timestampString = "466006795.660128"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
-            landmarkName = "saveToCustomAlbum()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -139,11 +123,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mm131/PhotoBrowserCollectionViewController.swift"
-            timestampString = "466006795.660128"
+            timestampString = "466430462.286685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "261"
-            endingLineNumber = "261"
+            startingLineNumber = "255"
+            endingLineNumber = "255"
             landmarkName = "populatePhotos()"
             landmarkType = "5">
          </BreakpointContent>
@@ -155,11 +139,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mm131/PhotoBrowserCollectionViewController.swift"
-            timestampString = "466006795.660128"
+            timestampString = "466430462.286685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "260"
-            endingLineNumber = "260"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
             landmarkName = "populatePhotos()"
             landmarkType = "5">
          </BreakpointContent>
