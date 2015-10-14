@@ -3,7 +3,7 @@ Swift 2.0 基于UICollectionView的美图浏览器
 
 开发环境:xcode7 Version 7.0.1 (7A1001) / ios9.0
 
-使用框架:Alamofire, SDWebImage, JGProgressHUD, Kanna
+使用框架:Alamofire, SDWebImage, JGProgressHUD, MBProgressHUD, Kanna
 
 在学习alamofire和uicollectionview过程中做的一个demo，其实已经比较完善了。
 
