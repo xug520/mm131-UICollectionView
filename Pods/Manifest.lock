@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (2.0.2)
-  - JGProgressHUD (1.3)
-  - Kanna (1.0.0)
+  - JGProgressHUD (1.3.1)
+  - Kanna (1.0.2)
   - MBProgressHUD (0.9.1)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
@@ -16,8 +16,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
-  JGProgressHUD: a58f62d3afac173d201250c3ba628fe44bd67017
-  Kanna: 92799095ecb17b85ac2444bb5c8ce6394a137adb
+  JGProgressHUD: 153053a21d81208cb5f659691996bcefce6a9885
+  Kanna: 059afb193a9f8ea34f46cb55a8b11bf4257efad8
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
