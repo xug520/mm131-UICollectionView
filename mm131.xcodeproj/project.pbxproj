@@ -25,25 +25,25 @@
 		89541AF01B95DD0000D6D7D9 /* 1000meitu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89541AEC1B95DD0000D6D7D9 /* 1000meitu.swift */; };
 		89541AF21B95DD0000D6D7D9 /* PhotoBrowserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89541AEE1B95DD0000D6D7D9 /* PhotoBrowserCollectionViewController.swift */; };
 		896EFF741BA1B57500BBEF0E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896EFF731BA1B57500BBEF0E /* SettingViewController.swift */; };
-		89AEBCEB1BBAB415003956E4 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC11BBAB415003956E4 /* MJRefreshAutoFooter.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCEC1BBAB415003956E4 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC31BBAB415003956E4 /* MJRefreshBackFooter.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCED1BBAB415003956E4 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC51BBAB415003956E4 /* MJRefreshComponent.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCEE1BBAB415003956E4 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC71BBAB415003956E4 /* MJRefreshFooter.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCEF1BBAB415003956E4 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC91BBAB415003956E4 /* MJRefreshHeader.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCF01BBAB415003956E4 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCCE1BBAB415003956E4 /* MJRefreshAutoGifFooter.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCF11BBAB415003956E4 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCD01BBAB415003956E4 /* MJRefreshAutoNormalFooter.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCF21BBAB415003956E4 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCD21BBAB415003956E4 /* MJRefreshAutoStateFooter.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCF31BBAB415003956E4 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCD51BBAB415003956E4 /* MJRefreshBackGifFooter.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCF41BBAB415003956E4 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCD71BBAB415003956E4 /* MJRefreshBackNormalFooter.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCF51BBAB415003956E4 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCD91BBAB415003956E4 /* MJRefreshBackStateFooter.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCF61BBAB415003956E4 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCDC1BBAB415003956E4 /* MJRefreshGifHeader.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCF71BBAB415003956E4 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCDE1BBAB415003956E4 /* MJRefreshNormalHeader.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCF81BBAB415003956E4 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCE01BBAB415003956E4 /* MJRefreshStateHeader.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCF91BBAB415003956E4 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89AEBCE11BBAB415003956E4 /* MJRefresh.bundle */; settings = {ASSET_TAGS = (); }; };
-		89AEBCFA1BBAB415003956E4 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCE41BBAB415003956E4 /* MJRefreshConst.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCFB1BBAB415003956E4 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCE61BBAB415003956E4 /* UIScrollView+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCFC1BBAB415003956E4 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCE81BBAB415003956E4 /* UIScrollView+MJRefresh.m */; settings = {ASSET_TAGS = (); }; };
-		89AEBCFD1BBAB415003956E4 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCEA1BBAB415003956E4 /* UIView+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
+		89AEBCEB1BBAB415003956E4 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC11BBAB415003956E4 /* MJRefreshAutoFooter.m */; };
+		89AEBCEC1BBAB415003956E4 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC31BBAB415003956E4 /* MJRefreshBackFooter.m */; };
+		89AEBCED1BBAB415003956E4 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC51BBAB415003956E4 /* MJRefreshComponent.m */; };
+		89AEBCEE1BBAB415003956E4 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC71BBAB415003956E4 /* MJRefreshFooter.m */; };
+		89AEBCEF1BBAB415003956E4 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC91BBAB415003956E4 /* MJRefreshHeader.m */; };
+		89AEBCF01BBAB415003956E4 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCCE1BBAB415003956E4 /* MJRefreshAutoGifFooter.m */; };
+		89AEBCF11BBAB415003956E4 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCD01BBAB415003956E4 /* MJRefreshAutoNormalFooter.m */; };
+		89AEBCF21BBAB415003956E4 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCD21BBAB415003956E4 /* MJRefreshAutoStateFooter.m */; };
+		89AEBCF31BBAB415003956E4 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCD51BBAB415003956E4 /* MJRefreshBackGifFooter.m */; };
+		89AEBCF41BBAB415003956E4 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCD71BBAB415003956E4 /* MJRefreshBackNormalFooter.m */; };
+		89AEBCF51BBAB415003956E4 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCD91BBAB415003956E4 /* MJRefreshBackStateFooter.m */; };
+		89AEBCF61BBAB415003956E4 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCDC1BBAB415003956E4 /* MJRefreshGifHeader.m */; };
+		89AEBCF71BBAB415003956E4 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCDE1BBAB415003956E4 /* MJRefreshNormalHeader.m */; };
+		89AEBCF81BBAB415003956E4 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCE01BBAB415003956E4 /* MJRefreshStateHeader.m */; };
+		89AEBCF91BBAB415003956E4 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89AEBCE11BBAB415003956E4 /* MJRefresh.bundle */; };
+		89AEBCFA1BBAB415003956E4 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCE41BBAB415003956E4 /* MJRefreshConst.m */; };
+		89AEBCFB1BBAB415003956E4 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCE61BBAB415003956E4 /* UIScrollView+MJExtension.m */; };
+		89AEBCFC1BBAB415003956E4 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCE81BBAB415003956E4 /* UIScrollView+MJRefresh.m */; };
+		89AEBCFD1BBAB415003956E4 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCEA1BBAB415003956E4 /* UIView+MJExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -424,6 +424,7 @@
 				TargetAttributes = {
 					89541AAF1B95DC2900D6D7D9 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 557XX2G4GZ;
 					};
 					89541AC71B95DC2900D6D7D9 = {
 						CreatedOnToolsVersion = 6.4;
@@ -614,8 +615,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Lu (EKTN96KCU6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jimmy Lu (EKTN96KCU6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -638,7 +639,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "28bbf7e9-a6f2-40e7-9063-cb24d82fba1b";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -663,8 +664,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -693,14 +694,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Lu (EKTN96KCU6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jimmy Lu (EKTN96KCU6)";
 				INFOPLIST_FILE = mm131/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.xxxx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lu.free.funsexymm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "28bbf7e9-a6f2-40e7-9063-cb24d82fba1b";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -713,11 +714,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = mm131/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.xxxx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lu.free.funsexymm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
