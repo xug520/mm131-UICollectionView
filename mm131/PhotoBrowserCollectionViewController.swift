@@ -11,77 +11,8 @@ import Alamofire
 import Kanna
 import Photos
 import JGProgressHUD
-//import WebImage
-
-class CustomPhotoAlbum {
-    
-    static let albumName = "xxxx"
-    static let sharedInstance = CustomPhotoAlbum()
-    
-    var assetCollection: PHAssetCollection!
-    
-    init() {
-        
-        func fetchAssetCollectionForAlbum() -> PHAssetCollection! {
-            
-            let fetchOptions = PHFetchOptions()
-            fetchOptions.predicate = NSPredicate(format: "title = %@", CustomPhotoAlbum.albumName)
-            let collection = PHAssetCollection.fetchAssetCollectionsWithType(.Album, subtype: .Any, options: fetchOptions)
-            
-            if let firstObject: AnyObject = collection.firstObject {
-                return collection.firstObject as! PHAssetCollection
-            }
-            
-            return nil
-        }
-        
-        if let assetCollection = fetchAssetCollectionForAlbum() {
-            self.assetCollection = assetCollection
-            return
-        }
-        
-        PHPhotoLibrary.sharedPhotoLibrary().performChanges({
-            PHAssetCollectionChangeRequest.creationRequestForAssetCollectionWithTitle(CustomPhotoAlbum.albumName)
-            }) { success, _ in
-                if success {
-                    self.assetCollection = fetchAssetCollectionForAlbum()
-                }
-        }
-    }
-    
-    func saveImage(image: UIImage) {
-        
-        if assetCollection == nil {
-            return   // If there was an error upstream, skip the save.
-        }
-        
-        PHPhotoLibrary.sharedPhotoLibrary().performChanges({
-            let assetChangeRequest = PHAssetChangeRequest.creationRequestForAssetFromImage(image)
-            let assetPlaceholder = assetChangeRequest.placeholderForCreatedAsset
-            let albumChangeRequest = PHAssetCollectionChangeRequest(forAssetCollection: self.assetCollection)
-//            albumChangeRequest!.addAssets([assetPlaceholder])
-//            albumChangeRequest?.addAssets(self)
-            }, completionHandler: nil)
-    }
-    
-    
-}
-
-class PhotoBrowserCollectionViewCell: UICollectionViewCell {
-    var imageView :UIImageView = UIImageView()
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        addSubview(imageView)
-        imageView.frame = bounds
-        imageView.contentMode = .ScaleAspectFit
-    }
-}
-
+import MBProgressHUD
+import SDWebImage
 
 class PhotoBrowserCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIActionSheetDelegate{
     
@@ -121,10 +52,10 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
         addButtomBar()
         
         //注册点击事件，隐藏/出现navigationbar和toolbar
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
-        tapRecognizer.numberOfTapsRequired = 1
-        tapRecognizer.numberOfTouchesRequired = 1
-        self.collectionView!.addGestureRecognizer(tapRecognizer)
+//        let tapRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
+//        tapRecognizer.numberOfTapsRequired = 1
+//        tapRecognizer.numberOfTouchesRequired = 1
+//        self.collectionView!.addGestureRecognizer(tapRecognizer)
         //为了消除载入时候竖直方向上的位移
         self.automaticallyAdjustsScrollViewInsets = false
     }

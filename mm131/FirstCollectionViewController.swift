@@ -10,26 +10,8 @@ import UIKit
 import Alamofire
 import Kanna
 import JGProgressHUD
-
-class FisrstCollectionViewCell: UICollectionViewCell {
-    // request stored for cancellation and checking the original URLString
-    var request: Alamofire.Request?
-    
-    //image是直接连接到storyboard上的
-    var imageView = UIImageView()
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        addSubview(imageView)
-        imageView.frame = bounds
-        imageView.contentMode = UIViewContentMode.ScaleAspectFit
-
-    }
-}
+import MBProgressHUD
+import SDWebImage
 
 class FirstCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIImagePickerControllerDelegate, TopMenuDelegate{
     

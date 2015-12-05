@@ -9,8 +9,5 @@
 #ifndef mm131_Bridging_Header_h
 #define mm131_Bridging_Header_h
 
-#import "Pods/MBProgressHUD/MBProgressHUD.h"
-#import "SDWebImage/UIImageView+WebCache.h"
-#import "JGProgressHUD/JGProgressHUD.h"
 #import "MJRefresh.h"
 #endif

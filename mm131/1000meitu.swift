@@ -70,41 +70,6 @@ class PhotoUtil {
     init?(response: NSHTTPURLResponse, representation: AnyObject)
 }
 
-//extension Alamofire.Request {
-//    public func responseObject<T: ResponseObjectSerializable>(completionHandler: (NSURLRequest, NSHTTPURLResponse?, T?, NSError?) -> Void) -> Self {
-//        let responseSerializer = GenericResponseSerializer<T> { request, response, data in
-//            let JSONResponseSerializer = Request.JSONResponseSerializer(options: .AllowFragments)
-//            let (JSON: AnyObject,?, serializationError) = JSONResponseSerializer.serializeResponse(request, response, data)
-//            
-//            if let response = response, JSON: AnyObject = JSON {
-//                return (T(response: response, representation: JSON), nil)
-//            } else {
-//                return (nil, serializationError)
-//            }
-//        }
-//        
-//        return response(responseSerializer: responseSerializer, completionHandler: completionHandler)
-//    }
-//}
-
-//extension Alamofire.Request {
-//    public static func imageResponseSerializer() -> GenericResponseSerializer<UIImage> {
-//        return GenericResponseSerializer { request, response, data in
-//            if data == nil {
-//                return (nil, nil)
-//            }
-//            
-//            let image = UIImage(data: data!, scale: UIScreen.mainScreen().scale)
-//            
-//            return (image, nil)
-//        }
-//    }
-//    
-//    public func responseImage(completionHandler: (NSURLRequest, NSHTTPURLResponse?, UIImage?, NSError?) -> Void) -> Self {
-//        return response(responseSerializer: Request.imageResponseSerializer(), completionHandler: completionHandler)
-//    }
-//}
-
     enum Router {//必须实现URLRequestConvertible
         static let baseURLString: String = "http://www.mm131.com"
         case PhotoPage(PageType, Int)

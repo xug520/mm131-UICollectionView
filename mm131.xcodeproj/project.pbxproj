@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		797CF383CB8FFCB097CC52EF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC93479A813648E517B772D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		797CF383CB8FFCB097CC52EF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC93479A813648E517B772D /* Pods.framework */; };
 		89386A7F1B9A9C8900E188C2 /* CS1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89386A761B9A9C8900E188C2 /* CS1TableViewController.swift */; };
 		89386A801B9A9C8900E188C2 /* ZNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89386A771B9A9C8900E188C2 /* ZNViewController.swift */; };
 		89386A811B9A9C8900E188C2 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89386A781B9A9C8900E188C2 /* Header.swift */; };
@@ -16,6 +16,8 @@
 		89386A841B9A9C8900E188C2 /* ZNCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89386A7D1B9A9C8900E188C2 /* ZNCollectionViewCell.swift */; };
 		89386A851B9A9C8900E188C2 /* ZNTopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89386A7E1B9A9C8900E188C2 /* ZNTopMenuView.swift */; };
 		89386A8A1B9A9CFF00E188C2 /* FirstCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89386A891B9A9CFF00E188C2 /* FirstCollectionViewController.swift */; };
+		893E37EC1C12D7EB00D47CFD /* PhotoBrowserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E37EB1C12D7EB00D47CFD /* PhotoBrowserCollectionViewCell.swift */; };
+		893E37EE1C12D96E00D47CFD /* FisrstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E37ED1C12D96E00D47CFD /* FisrstCollectionViewCell.swift */; };
 		89541AB61B95DC2900D6D7D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89541AB51B95DC2900D6D7D9 /* AppDelegate.swift */; };
 		89541AB91B95DC2900D6D7D9 /* mm131.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89541AB71B95DC2900D6D7D9 /* mm131.xcdatamodeld */; };
 		89541ABE1B95DC2900D6D7D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89541ABC1B95DC2900D6D7D9 /* Main.storyboard */; };
@@ -24,7 +26,6 @@
 		89541ACF1B95DC2900D6D7D9 /* mm131Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89541ACE1B95DC2900D6D7D9 /* mm131Tests.swift */; };
 		89541AF01B95DD0000D6D7D9 /* 1000meitu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89541AEC1B95DD0000D6D7D9 /* 1000meitu.swift */; };
 		89541AF21B95DD0000D6D7D9 /* PhotoBrowserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89541AEE1B95DD0000D6D7D9 /* PhotoBrowserCollectionViewController.swift */; };
-		896EFF741BA1B57500BBEF0E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896EFF731BA1B57500BBEF0E /* SettingViewController.swift */; };
 		89AEBCEB1BBAB415003956E4 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC11BBAB415003956E4 /* MJRefreshAutoFooter.m */; };
 		89AEBCEC1BBAB415003956E4 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC31BBAB415003956E4 /* MJRefreshBackFooter.m */; };
 		89AEBCED1BBAB415003956E4 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEBCC51BBAB415003956E4 /* MJRefreshComponent.m */; };
@@ -82,6 +83,8 @@
 		89386A7D1B9A9C8900E188C2 /* ZNCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNCollectionViewCell.swift; sourceTree = "<group>"; };
 		89386A7E1B9A9C8900E188C2 /* ZNTopMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNTopMenuView.swift; sourceTree = "<group>"; };
 		89386A891B9A9CFF00E188C2 /* FirstCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewController.swift; sourceTree = "<group>"; };
+		893E37EB1C12D7EB00D47CFD /* PhotoBrowserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCollectionViewCell.swift; sourceTree = "<group>"; };
+		893E37ED1C12D96E00D47CFD /* FisrstCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisrstCollectionViewCell.swift; sourceTree = "<group>"; };
 		89541AB01B95DC2900D6D7D9 /* mm131.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mm131.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89541AB41B95DC2900D6D7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89541AB51B95DC2900D6D7D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +97,6 @@
 		89541ACE1B95DC2900D6D7D9 /* mm131Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mm131Tests.swift; sourceTree = "<group>"; };
 		89541AEC1B95DD0000D6D7D9 /* 1000meitu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1000meitu.swift; sourceTree = "<group>"; };
 		89541AEE1B95DD0000D6D7D9 /* PhotoBrowserCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCollectionViewController.swift; sourceTree = "<group>"; };
-		896EFF731BA1B57500BBEF0E /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		89AEBCC01BBAB415003956E4 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		89AEBCC11BBAB415003956E4 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		89AEBCC21BBAB415003956E4 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -180,8 +182,7 @@
 				89386A791B9A9C8900E188C2 /* Tools */,
 				89386A7C1B9A9C8900E188C2 /* View */,
 			);
-			name = ZNScrollMenu;
-			path = mm131/ZNScrollMenu;
+			path = ZNScrollMenu;
 			sourceTree = "<group>";
 		};
 		89386A751B9A9C8900E188C2 /* Controller */ = {
@@ -211,13 +212,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		893E37E91C12D78B00D47CFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89386A891B9A9CFF00E188C2 /* FirstCollectionViewController.swift */,
+				893E37ED1C12D96E00D47CFD /* FisrstCollectionViewCell.swift */,
+				89541AEE1B95DD0000D6D7D9 /* PhotoBrowserCollectionViewController.swift */,
+				893E37EB1C12D7EB00D47CFD /* PhotoBrowserCollectionViewCell.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		893E37EA1C12D79200D47CFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89541AEC1B95DD0000D6D7D9 /* 1000meitu.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		893E37EF1C12DA0100D47CFD /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				89AEBCBE1BBAB415003956E4 /* MJRefresh */,
+				89386A741B9A9C8900E188C2 /* ZNScrollMenu */,
+			);
+			name = Third;
+			sourceTree = "<group>";
+		};
 		89541AA71B95DC2900D6D7D9 = {
 			isa = PBXGroup;
 			children = (
 				891374201B9B2CE90075BDFE /* Bridging-Header.h */,
-				89AEBCBE1BBAB415003956E4 /* MJRefresh */,
 				89541AB21B95DC2900D6D7D9 /* mm131 */,
-				89386A741B9A9C8900E188C2 /* ZNScrollMenu */,
 				89541ACB1B95DC2900D6D7D9 /* mm131Tests */,
 				89541AB11B95DC2900D6D7D9 /* Products */,
 				314A2DC14666878D25C65E32 /* Pods */,
@@ -237,11 +264,10 @@
 		89541AB21B95DC2900D6D7D9 /* mm131 */ = {
 			isa = PBXGroup;
 			children = (
-				89386A891B9A9CFF00E188C2 /* FirstCollectionViewController.swift */,
-				896EFF731BA1B57500BBEF0E /* SettingViewController.swift */,
+				893E37EF1C12DA0100D47CFD /* Third */,
+				893E37EA1C12D79200D47CFD /* Model */,
+				893E37E91C12D78B00D47CFD /* Controller */,
 				89541AB51B95DC2900D6D7D9 /* AppDelegate.swift */,
-				89541AEC1B95DD0000D6D7D9 /* 1000meitu.swift */,
-				89541AEE1B95DD0000D6D7D9 /* PhotoBrowserCollectionViewController.swift */,
 				89541ABC1B95DC2900D6D7D9 /* Main.storyboard */,
 				89541ABF1B95DC2900D6D7D9 /* Images.xcassets */,
 				89541AC11B95DC2900D6D7D9 /* LaunchScreen.xib */,
@@ -292,7 +318,8 @@
 				89AEBCE91BBAB415003956E4 /* UIView+MJExtension.h */,
 				89AEBCEA1BBAB415003956E4 /* UIView+MJExtension.m */,
 			);
-			path = MJRefresh;
+			name = MJRefresh;
+			path = ../MJRefresh;
 			sourceTree = "<group>";
 		};
 		89AEBCBF1BBAB415003956E4 /* Base */ = {
@@ -538,13 +565,13 @@
 				89AEBCF61BBAB415003956E4 /* MJRefreshGifHeader.m in Sources */,
 				89541AB91B95DC2900D6D7D9 /* mm131.xcdatamodeld in Sources */,
 				89541AF01B95DD0000D6D7D9 /* 1000meitu.swift in Sources */,
-				896EFF741BA1B57500BBEF0E /* SettingViewController.swift in Sources */,
 				89AEBCEE1BBAB415003956E4 /* MJRefreshFooter.m in Sources */,
 				89386A851B9A9C8900E188C2 /* ZNTopMenuView.swift in Sources */,
 				89AEBCED1BBAB415003956E4 /* MJRefreshComponent.m in Sources */,
 				89386A801B9A9C8900E188C2 /* ZNViewController.swift in Sources */,
 				89AEBCF71BBAB415003956E4 /* MJRefreshNormalHeader.m in Sources */,
 				89AEBCF41BBAB415003956E4 /* MJRefreshBackNormalFooter.m in Sources */,
+				893E37EC1C12D7EB00D47CFD /* PhotoBrowserCollectionViewCell.swift in Sources */,
 				89AEBCEB1BBAB415003956E4 /* MJRefreshAutoFooter.m in Sources */,
 				89386A821B9A9C8900E188C2 /* StringSize.swift in Sources */,
 				89AEBCEF1BBAB415003956E4 /* MJRefreshHeader.m in Sources */,
@@ -552,6 +579,7 @@
 				89AEBCF81BBAB415003956E4 /* MJRefreshStateHeader.m in Sources */,
 				89AEBCF51BBAB415003956E4 /* MJRefreshBackStateFooter.m in Sources */,
 				89AEBCFA1BBAB415003956E4 /* MJRefreshConst.m in Sources */,
+				893E37EE1C12D96E00D47CFD /* FisrstCollectionViewCell.swift in Sources */,
 				89386A8A1B9A9CFF00E188C2 /* FirstCollectionViewController.swift in Sources */,
 				89541AF21B95DD0000D6D7D9 /* PhotoBrowserCollectionViewController.swift in Sources */,
 				89386A831B9A9C8900E188C2 /* UIColor-Random.swift in Sources */,
