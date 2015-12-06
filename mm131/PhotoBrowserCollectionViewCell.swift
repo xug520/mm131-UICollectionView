@@ -76,9 +76,15 @@ class PhotoBrowserCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate
     func handleTapGesture(sender: UITapGestureRecognizer) {
         let factor:CGFloat = sender.view!.transform.a
         if factor == 1 { //放大
+            UIView.beginAnimations(nil, context: nil)
+            UIView.setAnimationDuration(NSTimeInterval(0.3))
             scrollView.zoomScale = 2
+            UIView.commitAnimations()
         }else{// 缩小
+            UIView.beginAnimations(nil, context: nil)
+            UIView.setAnimationDuration(NSTimeInterval(0.3))
             scrollView.zoomScale = 1
+            UIView.commitAnimations()
         }
     }
 }
