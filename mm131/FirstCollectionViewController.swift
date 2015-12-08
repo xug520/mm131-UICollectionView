@@ -10,8 +10,7 @@ import UIKit
 import Alamofire
 import Kanna
 import JGProgressHUD
-import MBProgressHUD
-import SDWebImage
+import YYWebImage
 
 class FirstCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIImagePickerControllerDelegate, TopMenuDelegate{
     
