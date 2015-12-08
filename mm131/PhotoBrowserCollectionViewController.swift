@@ -14,7 +14,7 @@ import JGProgressHUD
 import MBProgressHUD
 import SDWebImage
 
-class PhotoBrowserCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIActionSheetDelegate{
+class PhotoBrowserCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIActionSheetDelegate, BrowserCellDelagate{
     
     var photos = NSMutableOrderedSet()
     
@@ -51,16 +51,12 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
         //添加下载baritem
         addButtomBar()
         
-        //注册点击事件，隐藏/出现navigationbar和toolbar
-//        let tapRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
-//        tapRecognizer.numberOfTapsRequired = 1
-//        tapRecognizer.numberOfTouchesRequired = 1
-//        self.collectionView!.addGestureRecognizer(tapRecognizer)
         //为了消除载入时候竖直方向上的位移
         self.automaticallyAdjustsScrollViewInsets = false
     }
     
-    func handleTap(recognizer: UITapGestureRecognizer!) {
+    //单击隐藏navigationbar和tabbar
+    func singleTap() {
         let state = self.navigationController?.navigationBarHidden
         self.navigationController?.setNavigationBarHidden(!state!, animated: true)
         self.navigationController?.setToolbarHidden(!state!, animated: true)
@@ -230,7 +226,7 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(PhotoBrowserCellIdentifier, forIndexPath: indexPath) as! PhotoBrowserCollectionViewCell
-        
+        cell.delegate = self
         let imageURL = NSURL(string: photos.objectAtIndex(indexPath.row) as! String)
         
         //复用时先置为nil，使其不显示原有图片

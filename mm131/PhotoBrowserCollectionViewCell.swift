@@ -11,6 +11,7 @@ import UIKit
 class PhotoBrowserCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate {
     var scrollView: UIScrollView = UIScrollView()
     var imageView: UIImageView = UIImageView()
+    var delegate: BrowserCellDelagate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,11 +38,24 @@ class PhotoBrowserCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate
         
         scrollView.contentSize = imageView.frame.size
         //添加双击手势
-        let gr1:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
-        gr1.numberOfTapsRequired = 1
-        gr1.numberOfTapsRequired = 2
+        let doubleTapGesture:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
+        doubleTapGesture.numberOfTouchesRequired = 1
+        doubleTapGesture.numberOfTapsRequired = 2
         imageView.userInteractionEnabled = true
-        imageView.addGestureRecognizer(gr1)
+        imageView.addGestureRecognizer(doubleTapGesture)
+        
+        let singleTapGesture:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("handleSingleTapGesture:"))
+        singleTapGesture.numberOfTouchesRequired = 1
+        singleTapGesture.numberOfTapsRequired = 1
+        imageView.userInteractionEnabled = true
+        imageView.addGestureRecognizer(singleTapGesture)
+        
+        singleTapGesture.requireGestureRecognizerToFail(doubleTapGesture)
+
+    }
+    
+    func handleSingleTapGesture(sender: UITapGestureRecognizer) {
+        delegate?.singleTap()
     }
     
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
