@@ -9,10 +9,8 @@ import Foundation
 import UIKit
 import Alamofire
 import Kanna
-import Photos
 import JGProgressHUD
-import MBProgressHUD
-import SDWebImage
+import YYWebImage
 
 class PhotoBrowserCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIActionSheetDelegate, BrowserCellDelagate{
     
@@ -79,14 +77,6 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
 
         self.setToolbarItems(items, animated: true)
         navigationController?.setToolbarHidden(false, animated: true)
-    }
-    
-    //设置HUD
-    func loadTextHUD(text: String, time: Float){
-        let loadingNotification = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-        loadingNotification.mode = MBProgressHUDMode.Text
-        loadingNotification.minShowTime = time
-        loadingNotification.labelText = text
     }
     
     //保存图片
@@ -231,19 +221,23 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
         
         //复用时先置为nil，使其不显示原有图片
         cell.imageView.image = nil
-
-        let loadingNotification = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-        loadingNotification.mode = MBProgressHUDMode.Indeterminate
-        loadingNotification.labelText = "加载中..."
-        cell.imageView.sd_setImageWithURL(imageURL, completed: { (image, error, cacheType, url) -> Void in
-            MBProgressHUD.hideHUDForView(self.view, animated: false)
-            if image == nil{
-                return
+        let loop = SDTransparentPieProgressView.progressView() as! SDTransparentPieProgressView
+        
+        loop.frame = CGRect(x: self.view.frame.width/2 - 30, y: self.view.frame.height/2 - 30, width: 60, height: 60)
+        
+        cell.imageView.yy_setImageWithURL(imageURL, placeholder: nil, options:  YYWebImageOptions.ProgressiveBlur, progress: { (received, total) -> Void in
+            if received != 0{
+                self.view.addSubview(loop)
             }
+            loop.progress = CGFloat(received)/CGFloat(total)
+            }, transform: nil, completion: { (image, url, type, stage, error) -> Void in
+                if image == nil{
+                    return
+                }
 
-            if indexPath.row + 2 >= self.currentPage{
-                self.populatePhotos()
-            }
+                if indexPath.row + 2 >= self.currentPage{
+                    self.populatePhotos()
+                }
         })
         
         return cell

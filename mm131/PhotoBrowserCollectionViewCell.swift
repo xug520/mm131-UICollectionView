@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import YYWebImage
 
 class PhotoBrowserCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate {
     var scrollView: UIScrollView = UIScrollView()
-    var imageView: UIImageView = UIImageView()
+    var imageView: YYAnimatedImageView = YYAnimatedImageView()
     var delegate: BrowserCellDelagate?
     
     override init(frame: CGRect) {

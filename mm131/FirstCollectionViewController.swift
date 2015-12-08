@@ -153,19 +153,20 @@ class FirstCollectionViewController: UICollectionViewController, UICollectionVie
     func clearCache(alert: UIAlertAction!){
         
         print("clear")
-        let size = SDImageCache.sharedImageCache().getSize() / 1000 //KB
-        var string: String
-        if size/1000 >= 1{
-            string = "清除缓存 \(size/1000)M"
-        }else{
-            string = "清除缓存 \(size)K"
-        }
-        let hud = JGProgressHUD(style: JGProgressHUDStyle.Light)
-        hud.textLabel.text = string
-        hud.indicatorView = JGProgressHUDSuccessIndicatorView()
-        hud.showInView(self.view, animated: true)
-        SDImageCache.sharedImageCache().clearDisk()
-        hud.dismissAfterDelay(1.0, animated: true)
+//        let size = YYImageCache.sharedCache().
+//        let size = SDImageCache.sharedImageCache().getSize() / 1000 //KB
+//        var string: String
+//        if size/1000 >= 1{
+//            string = "清除缓存 \(size/1000)M"
+//        }else{
+//            string = "清除缓存 \(size)K"
+//        }
+//        let hud = JGProgressHUD(style: JGProgressHUDStyle.Light)
+//        hud.textLabel.text = string
+//        hud.indicatorView = JGProgressHUDSuccessIndicatorView()
+//        hud.showInView(self.view, animated: true)
+//        SDImageCache.sharedImageCache().clearDisk()
+//        hud.dismissAfterDelay(1.0, animated: true)
     }
     
     //下拉刷新回调函数
@@ -331,8 +332,8 @@ class FirstCollectionViewController: UICollectionViewController, UICollectionVie
         //复用时先置为nil，使其不显示原有图片
         cell.imageView.image = nil
 
-        //用sdwebimage更加的方便，集成了cache，弃用原来的。。
-        cell.imageView.sd_setImageWithURL(imageURL)
+        //用yywebimage更加的方便，集成了cache，弃用原来的。。
+        cell.imageView.yy_setImageWithURL(imageURL, options: YYWebImageOptions.ProgressiveBlur)
         
         return cell
     }

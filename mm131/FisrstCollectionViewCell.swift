@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import YYWebImage
 
 class FisrstCollectionViewCell: UICollectionViewCell {
     //image是直接连接到storyboard上的
-    var imageView = UIImageView()
+    var imageView = YYAnimatedImageView()
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
