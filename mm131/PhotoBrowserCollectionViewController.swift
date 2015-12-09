@@ -221,15 +221,22 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
         
         //复用时先置为nil，使其不显示原有图片
         cell.imageView.image = nil
-        let loop = SDTransparentPieProgressView.progressView() as! SDTransparentPieProgressView
-        
-        loop.frame = CGRect(x: self.view.frame.width/2 - 30, y: self.view.frame.height/2 - 30, width: 60, height: 60)
+        let mixedIndicator: RMDownloadIndicator = RMDownloadIndicator(rectframe: CGRectMake(CGRectGetWidth(self.view.bounds)/2 - 30, CGRectGetMaxY(self.view.bounds)/2 - 30, 60, 60), type: RMIndicatorType.kRMMixedIndictor)
+        mixedIndicator.backgroundColor = UIColor.clearColor()
+        mixedIndicator.fillColor = UIColor.mainColor()
+        mixedIndicator.strokeColor = UIColor.mainColor()
+        mixedIndicator.closedIndicatorBackgroundStrokeColor = UIColor.mainColor()
+        mixedIndicator.radiusPercent = 0.45
+        mixedIndicator.loadIndicator()
         
         cell.imageView.yy_setImageWithURL(imageURL, placeholder: nil, options:  YYWebImageOptions.ProgressiveBlur, progress: { (received, total) -> Void in
             if received != 0{
-                self.view.addSubview(loop)
+                if !self.view.subviews.contains(mixedIndicator){
+                    self.view.addSubview(mixedIndicator)
+                }
             }
-            loop.progress = CGFloat(received)/CGFloat(total)
+            
+            mixedIndicator.updateWithTotalBytes(CGFloat(total), downloadedBytes: CGFloat(received))
             }, transform: nil, completion: { (image, url, type, stage, error) -> Void in
                 if image == nil{
                     return

@@ -19,13 +19,8 @@
 		893E37EC1C12D7EB00D47CFD /* PhotoBrowserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E37EB1C12D7EB00D47CFD /* PhotoBrowserCollectionViewCell.swift */; };
 		893E37EE1C12D96E00D47CFD /* FisrstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E37ED1C12D96E00D47CFD /* FisrstCollectionViewCell.swift */; };
 		8951D1CC1C17301000442646 /* BrowserCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8951D1CB1C17301000442646 /* BrowserCellDelegate.swift */; };
-		8951D1DD1C17320500442646 /* SDBallProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8951D1CF1C17320500442646 /* SDBallProgressView.m */; };
-		8951D1DE1C17320500442646 /* SDBaseProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8951D1D11C17320500442646 /* SDBaseProgressView.m */; };
-		8951D1DF1C17320500442646 /* SDLoopProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8951D1D31C17320500442646 /* SDLoopProgressView.m */; };
-		8951D1E01C17320500442646 /* SDPieLoopProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8951D1D51C17320500442646 /* SDPieLoopProgressView.m */; };
-		8951D1E11C17320500442646 /* SDPieProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8951D1D71C17320500442646 /* SDPieProgressView.m */; };
-		8951D1E21C17320500442646 /* SDRotationLoopProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8951D1DA1C17320500442646 /* SDRotationLoopProgressView.m */; };
-		8951D1E31C17320500442646 /* SDTransparentPieProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8951D1DC1C17320500442646 /* SDTransparentPieProgressView.m */; };
+		8951D1E71C18657700442646 /* RMDownloadIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8951D1E61C18657700442646 /* RMDownloadIndicator.swift */; };
+		8951D1EA1C18660700442646 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8951D1E91C18660700442646 /* Extension.swift */; };
 		89541AB61B95DC2900D6D7D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89541AB51B95DC2900D6D7D9 /* AppDelegate.swift */; };
 		89541AB91B95DC2900D6D7D9 /* mm131.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89541AB71B95DC2900D6D7D9 /* mm131.xcdatamodeld */; };
 		89541ABE1B95DC2900D6D7D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89541ABC1B95DC2900D6D7D9 /* Main.storyboard */; };
@@ -94,21 +89,8 @@
 		893E37EB1C12D7EB00D47CFD /* PhotoBrowserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCollectionViewCell.swift; sourceTree = "<group>"; };
 		893E37ED1C12D96E00D47CFD /* FisrstCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisrstCollectionViewCell.swift; sourceTree = "<group>"; };
 		8951D1CB1C17301000442646 /* BrowserCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserCellDelegate.swift; sourceTree = "<group>"; };
-		8951D1CE1C17320500442646 /* SDBallProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBallProgressView.h; sourceTree = "<group>"; };
-		8951D1CF1C17320500442646 /* SDBallProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBallProgressView.m; sourceTree = "<group>"; };
-		8951D1D01C17320500442646 /* SDBaseProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBaseProgressView.h; sourceTree = "<group>"; };
-		8951D1D11C17320500442646 /* SDBaseProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBaseProgressView.m; sourceTree = "<group>"; };
-		8951D1D21C17320500442646 /* SDLoopProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLoopProgressView.h; sourceTree = "<group>"; };
-		8951D1D31C17320500442646 /* SDLoopProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLoopProgressView.m; sourceTree = "<group>"; };
-		8951D1D41C17320500442646 /* SDPieLoopProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPieLoopProgressView.h; sourceTree = "<group>"; };
-		8951D1D51C17320500442646 /* SDPieLoopProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPieLoopProgressView.m; sourceTree = "<group>"; };
-		8951D1D61C17320500442646 /* SDPieProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPieProgressView.h; sourceTree = "<group>"; };
-		8951D1D71C17320500442646 /* SDPieProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPieProgressView.m; sourceTree = "<group>"; };
-		8951D1D81C17320500442646 /* SDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDProgressView.h; sourceTree = "<group>"; };
-		8951D1D91C17320500442646 /* SDRotationLoopProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRotationLoopProgressView.h; sourceTree = "<group>"; };
-		8951D1DA1C17320500442646 /* SDRotationLoopProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRotationLoopProgressView.m; sourceTree = "<group>"; };
-		8951D1DB1C17320500442646 /* SDTransparentPieProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTransparentPieProgressView.h; sourceTree = "<group>"; };
-		8951D1DC1C17320500442646 /* SDTransparentPieProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTransparentPieProgressView.m; sourceTree = "<group>"; };
+		8951D1E61C18657700442646 /* RMDownloadIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMDownloadIndicator.swift; sourceTree = "<group>"; };
+		8951D1E91C18660700442646 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		89541AB01B95DC2900D6D7D9 /* mm131.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mm131.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89541AB41B95DC2900D6D7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89541AB51B95DC2900D6D7D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -244,6 +226,7 @@
 				89541AEE1B95DD0000D6D7D9 /* PhotoBrowserCollectionViewController.swift */,
 				893E37EB1C12D7EB00D47CFD /* PhotoBrowserCollectionViewCell.swift */,
 				8951D1CB1C17301000442646 /* BrowserCellDelegate.swift */,
+				8951D1E61C18657700442646 /* RMDownloadIndicator.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -259,33 +242,18 @@
 		893E37EF1C12DA0100D47CFD /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				8951D1CD1C17320500442646 /* SDProgressView */,
 				89AEBCBE1BBAB415003956E4 /* MJRefresh */,
 				89386A741B9A9C8900E188C2 /* ZNScrollMenu */,
 			);
 			name = Third;
 			sourceTree = "<group>";
 		};
-		8951D1CD1C17320500442646 /* SDProgressView */ = {
+		8951D1E81C1865E000442646 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				8951D1CE1C17320500442646 /* SDBallProgressView.h */,
-				8951D1CF1C17320500442646 /* SDBallProgressView.m */,
-				8951D1D01C17320500442646 /* SDBaseProgressView.h */,
-				8951D1D11C17320500442646 /* SDBaseProgressView.m */,
-				8951D1D21C17320500442646 /* SDLoopProgressView.h */,
-				8951D1D31C17320500442646 /* SDLoopProgressView.m */,
-				8951D1D41C17320500442646 /* SDPieLoopProgressView.h */,
-				8951D1D51C17320500442646 /* SDPieLoopProgressView.m */,
-				8951D1D61C17320500442646 /* SDPieProgressView.h */,
-				8951D1D71C17320500442646 /* SDPieProgressView.m */,
-				8951D1D81C17320500442646 /* SDProgressView.h */,
-				8951D1D91C17320500442646 /* SDRotationLoopProgressView.h */,
-				8951D1DA1C17320500442646 /* SDRotationLoopProgressView.m */,
-				8951D1DB1C17320500442646 /* SDTransparentPieProgressView.h */,
-				8951D1DC1C17320500442646 /* SDTransparentPieProgressView.m */,
+				8951D1E91C18660700442646 /* Extension.swift */,
 			);
-			path = SDProgressView;
+			name = Common;
 			sourceTree = "<group>";
 		};
 		89541AA71B95DC2900D6D7D9 = {
@@ -312,6 +280,7 @@
 		89541AB21B95DC2900D6D7D9 /* mm131 */ = {
 			isa = PBXGroup;
 			children = (
+				8951D1E81C1865E000442646 /* Common */,
 				893E37EF1C12DA0100D47CFD /* Third */,
 				893E37EA1C12D79200D47CFD /* Model */,
 				893E37E91C12D78B00D47CFD /* Controller */,
@@ -608,13 +577,10 @@
 				89AEBCF31BBAB415003956E4 /* MJRefreshBackGifFooter.m in Sources */,
 				89AEBCEC1BBAB415003956E4 /* MJRefreshBackFooter.m in Sources */,
 				89AEBCF01BBAB415003956E4 /* MJRefreshAutoGifFooter.m in Sources */,
-				8951D1E31C17320500442646 /* SDTransparentPieProgressView.m in Sources */,
 				89AEBCFD1BBAB415003956E4 /* UIView+MJExtension.m in Sources */,
 				89AEBCFC1BBAB415003956E4 /* UIScrollView+MJRefresh.m in Sources */,
 				89AEBCF61BBAB415003956E4 /* MJRefreshGifHeader.m in Sources */,
-				8951D1E11C17320500442646 /* SDPieProgressView.m in Sources */,
 				89541AB91B95DC2900D6D7D9 /* mm131.xcdatamodeld in Sources */,
-				8951D1E01C17320500442646 /* SDPieLoopProgressView.m in Sources */,
 				89541AF01B95DD0000D6D7D9 /* 1000meitu.swift in Sources */,
 				89AEBCEE1BBAB415003956E4 /* MJRefreshFooter.m in Sources */,
 				89386A851B9A9C8900E188C2 /* ZNTopMenuView.swift in Sources */,
@@ -622,24 +588,22 @@
 				89386A801B9A9C8900E188C2 /* ZNViewController.swift in Sources */,
 				89AEBCF71BBAB415003956E4 /* MJRefreshNormalHeader.m in Sources */,
 				89AEBCF41BBAB415003956E4 /* MJRefreshBackNormalFooter.m in Sources */,
-				8951D1DD1C17320500442646 /* SDBallProgressView.m in Sources */,
 				893E37EC1C12D7EB00D47CFD /* PhotoBrowserCollectionViewCell.swift in Sources */,
 				89AEBCEB1BBAB415003956E4 /* MJRefreshAutoFooter.m in Sources */,
 				89386A821B9A9C8900E188C2 /* StringSize.swift in Sources */,
 				89AEBCEF1BBAB415003956E4 /* MJRefreshHeader.m in Sources */,
-				8951D1E21C17320500442646 /* SDRotationLoopProgressView.m in Sources */,
 				89386A7F1B9A9C8900E188C2 /* CS1TableViewController.swift in Sources */,
 				89AEBCF81BBAB415003956E4 /* MJRefreshStateHeader.m in Sources */,
 				8951D1CC1C17301000442646 /* BrowserCellDelegate.swift in Sources */,
+				8951D1E71C18657700442646 /* RMDownloadIndicator.swift in Sources */,
 				89AEBCF51BBAB415003956E4 /* MJRefreshBackStateFooter.m in Sources */,
-				8951D1DF1C17320500442646 /* SDLoopProgressView.m in Sources */,
 				89AEBCFA1BBAB415003956E4 /* MJRefreshConst.m in Sources */,
 				893E37EE1C12D96E00D47CFD /* FisrstCollectionViewCell.swift in Sources */,
+				8951D1EA1C18660700442646 /* Extension.swift in Sources */,
 				89386A8A1B9A9CFF00E188C2 /* FirstCollectionViewController.swift in Sources */,
 				89541AF21B95DD0000D6D7D9 /* PhotoBrowserCollectionViewController.swift in Sources */,
 				89386A831B9A9C8900E188C2 /* UIColor-Random.swift in Sources */,
 				89AEBCFB1BBAB415003956E4 /* UIScrollView+MJExtension.m in Sources */,
-				8951D1DE1C17320500442646 /* SDBaseProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
